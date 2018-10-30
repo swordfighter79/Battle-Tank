@@ -16,15 +16,15 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Battle_Tank-6003.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Battle_Tank-9137.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Battle_Tank-6003.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Battle_Tank-9137.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Battle_Tank-6003.lib",
+			"Path": "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Battle_Tank-9137.lib",
 			"Type": "ImportLibrary"
 		},
 		{
