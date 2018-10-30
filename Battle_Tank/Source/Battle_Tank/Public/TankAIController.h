@@ -14,10 +14,12 @@ UCLASS()
 class BATTLE_TANK_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
+
+private:
 	
 	virtual void BeginPlay() override;
 
 	ATank* GetControlledTank() const;
 	
-	
+	ATank* GetPlayerTank() const;
 };
