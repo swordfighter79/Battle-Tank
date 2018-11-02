@@ -7,6 +7,9 @@
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"            //  most always be last include 
 
+
+class UTankBarrel;
+
 UCLASS()
 class BATTLE_TANK_API ATank : public APawn
 {
@@ -16,7 +19,7 @@ public:
 	void AimAt(FVector Hitlocation);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
+	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
 protected:
 	// Called when the game starts or when spawned
