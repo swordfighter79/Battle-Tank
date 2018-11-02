@@ -91,6 +91,6 @@ bool ATankPlayerController::GetLookDirection(FVector2D ScreenLocation, FVector& 
 		ScreenLocation.X, 
 		ScreenLocation.Y, 
 		CamerWorldLocation, 
-		LookDirection
+		LookDirection		
 	);
 }
