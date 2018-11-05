@@ -2,15 +2,17 @@
 
 #pragma once
 
-
+#include "Projectile.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"            //  most always be last include 
+
 
 //  Foreward Declarations
 class UTankBarrel;
 class UTankTurret;
 class UTankAimingComponent;
+class AProjectile;
 
 UCLASS()
 class BATTLE_TANK_API ATank : public APawn
@@ -46,5 +48,16 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditAnywhere, Category = firing)
-	float LaunchSpeed = 4000;         
+		float LaunchSpeed = 4000;  
+
+	
+	UPROPERTY(EditAnywhere, Category = Setup)
+		TSubclassOf<AProjectile> ProjectileBlueprint;
+
+	//  Local Barrel refernce for spawning projectile
+	UTankBarrel* Barrel = nullptr;
+		
+
+
+	
 };
